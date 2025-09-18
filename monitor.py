@@ -174,7 +174,7 @@ class ApiClient:
 
 # Demo usage
 if __name__ == "__main__":
-    client = ApiClient("http://localhost:3000")
+    client = ApiClient("https://sensor.juliomacedo.dev/")
     monitor = TemperatureMonitor(safe_min=20.0, safe_max=80.0)
 
     def handle_event(reading: TemperatureReading):
