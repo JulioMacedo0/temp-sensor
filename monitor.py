@@ -80,7 +80,7 @@ class TemperatureMonitor:
 class ApiClient:
     """Simple client to consume /history and /stream from the Express app."""
 
-    def __init__(self, base_url: str = "http://localhost:3000"):
+    def __init__(self, base_url: str = "https://sensor.juliomacedo.dev/"):
         self.base_url = base_url.rstrip("/")
 
     def fetch_history(self) -> List[TemperatureReading]:
